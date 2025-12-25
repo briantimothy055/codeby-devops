@@ -1,1 +1,1 @@
-# Repo for codebuy course
+# Repo for codeby-devops
