@@ -1,0 +1,94 @@
+Script started on 2025-12-26 15:45:18+07:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="230" LINES="55"]
+[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ s[Ksudo sty[K[Kystenc[K[Kmctl stop nginx
+[?2004l[sudo] password for gpm: 
+[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl stop nginx[C[C[1P nginx[1P nginx[1P nginx[1P nginxd nginxi nginxs nginxa nginxb nginxl nginxe nginx
+[?2004lSynchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable nginx
+Removed '/etc/systemd/system/multi-user.target.wants/nginx.service'.
+[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl disable nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginxs nginxt nginxa nginxt nginxu nginxs nginx
+[?2004l[?1h=○ nginx.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (]8;;file://codeby/usr/lib/systemd/system/nginx.service\/usr/lib/systemd/system/nginx.service]8;;\; [0;1;38:5:185mdisabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: inactive (dead)[m
+       Docs: ]8;;man:nginx(8)\man:nginx(8)]8;;\[m]8;;\
+[m
+Dec 26 15:25:09 codeby systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...[m
+Dec 26 15:25:09 codeby systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.[m
+Dec 26 15:43:21 codeby systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...[m
+Dec 26 15:43:21 codeby systemd[1]: nginx.service: Deactivated successfully.[m
+Dec 26 15:43:21 codeby systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.[m
+Dec 26 15:44:35 codeby systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...[m
+Dec 26 15:44:35 codeby systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.[m
+Dec 26 15:45:32 codeby systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...[m
+Dec 26 15:45:32 codeby systemd[1]: nginx.service: Deactivated successfully.[m
+Dec 26 15:45:32 codeby systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.[m
+[K[?1l>[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ q[Ksudo [7msystemctl daemon-reload[27msystemctl daemon-reload
+[?2004l[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ [7msudo systemctl enable nginx-custom[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl enable nginx-custom
+[?2004lCreated symlink '/etc/systemd/system/multi-user.target.wants/nginx-custom.service' → '/etc/systemd/system/nginx-custom.service'.
+[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl enable nginx-custom[C[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-customs nginx-customt nginx-customa nginx-customr nginx-customt nginx-custom
+[?2004l[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl start nginx-custom[1@enable[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pstart[C[C[C[C[C[C[C[C[C[C[C[C[C[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-customs nginx-customt nginx-customa nginx-customt nginx-customu nginx-customs nginx-custom
+[?2004l[?1h=[0;1;32m●[0m nginx-custom.service - Custom NGINX service[m
+     Loaded: loaded (]8;;file://codeby/etc/systemd/system/nginx-custom.service\/etc/systemd/system/nginx-custom.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: [0;1;32mactive (running)[0m since Fri 2025-12-26 15:46:02 +07; 4s ago[m
+ Invocation: daac43f0c2bc4483b9ee413e93129a2d[m
+       Docs: ]8;;man:nginx(8)\man:nginx(8)]8;;\[m]8;;\
+    Process: 43414 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 43415 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 43417 (nginx)[m
+      Tasks: 5[0;38;5;245m (limit: 4574)[0m[m
+     Memory: 4.4M (peak: 4.9M)[m
+        CPU: 25ms[m
+     CGroup: /system.slice/nginx-custom.service[m
+             ├─[0;38;5;245m43417 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             ├─[0;38;5;245m43418 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m43419 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m43420 "nginx: worker process"[0m[m
+             └─[0;38;5;245m43421 "nginx: worker process"[0m[m
+[m
+Dec 26 15:46:02 codeby systemd[1]: Starting nginx-custom.service - Custom NGINX service...[m
+Dec 26 15:46:02 codeby systemd[1]: Started nginx-custom.service - Custom NGINX service.[m
+[K[?1l>[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl status nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-customs nginx-customt nginx-customo nginx-customp nginx-custom
+[?2004l[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl stop nginx-custom[2@atus[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?1h=○ nginx-custom.service - Custom NGINX service[m
+     Loaded: loaded (]8;;file://codeby/etc/systemd/system/nginx-custom.service\/etc/systemd/system/nginx-custom.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: inactive (dead) since Fri 2025-12-26 15:46:12 +07; 1s ago[m
+   Duration: 9.633s[m
+ Invocation: daac43f0c2bc4483b9ee413e93129a2d[m
+       Docs: ]8;;man:nginx(8)\man:nginx(8)]8;;\[m]8;;\
+    Process: 43414 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 43415 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 43435 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)[m
+   Main PID: 43417 (code=exited, status=0/SUCCESS)[m
+   Mem peak: 6.7M[m
+        CPU: 56ms[m
+[m
+Dec 26 15:46:02 codeby systemd[1]: Starting nginx-custom.service - Custom NGINX service...[m
+Dec 26 15:46:02 codeby systemd[1]: Started nginx-custom.service - Custom NGINX service.[m
+Dec 26 15:46:12 codeby systemd[1]: Stopping nginx-custom.service - Custom NGINX service...[m
+Dec 26 15:46:12 codeby systemd[1]: nginx-custom.service: Deactivated successfully.[m
+Dec 26 15:46:12 codeby systemd[1]: Stopped nginx-custom.service - Custom NGINX service.[m
+[K[?1l>[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl status nginx-custom[C[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-custom[1P nginx-customs nginx-customt nginx-customa nginx-customr nginx-customt nginx-custom
+[?2004l[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ sudo systemctl start nginx-custom[1@tus[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?1h=[0;1;32m●[0m nginx-custom.service - Custom NGINX service[m
+     Loaded: loaded (]8;;file://codeby/etc/systemd/system/nginx-custom.service\/etc/systemd/system/nginx-custom.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m]8;;\
+     Active: [0;1;32mactive (running)[0m since Fri 2025-12-26 15:46:23 +07; 1s ago[m
+ Invocation: dca9823a2cda47bc88b84014b85f1e92[m
+       Docs: ]8;;man:nginx(8)\man:nginx(8)]8;;\[m]8;;\
+    Process: 43451 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 43452 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 43454 (nginx)[m
+      Tasks: 5[0;38;5;245m (limit: 4574)[0m[m
+     Memory: 4.4M (peak: 5.1M)[m
+        CPU: 25ms[m
+     CGroup: /system.slice/nginx-custom.service[m
+             ├─[0;38;5;245m43454 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             ├─[0;38;5;245m43455 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m43456 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m43457 "nginx: worker process"[0m[m
+             └─[0;38;5;245m43458 "nginx: worker process"[0m[m
+[m
+Dec 26 15:46:23 codeby systemd[1]: Starting nginx-custom.service - Custom NGINX service...[m
+Dec 26 15:46:23 codeby systemd[1]: Started nginx-custom.service - Custom NGINX service.[m
+[K[?1l>[?2004h]0;gpm@codeby: ~/lesson4[01;32mgpm@codeby[00m:[01;34m~/lesson4[00m$ [7mjournalctl -u nginx.service[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjournalctl -u nginx.service[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@t[1@a[1@r[1P[3P[K[?2004l
+exit
+
+Script done on 2025-12-26 15:46:38+07:00 [COMMAND_EXIT_CODE="0"]
