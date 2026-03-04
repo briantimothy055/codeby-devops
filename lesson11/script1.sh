@@ -35,14 +35,14 @@ trunc_if_not_empty(){
 
 
 file_1(){
-    local $fpath=$1
+    local fpath=$1
     create_if_not_exists $fpath || return 1
     echo "Hello!" > $fpath 
     date >> $fpath
 }
 
 file_2(){
-    local $fpath=$1
+    local fpath=$1
     create_if_not_exists $fpath || return 1
     trunc_if_not_empty $fpath || return 1
 
@@ -61,7 +61,7 @@ file_2(){
 }
 
 file_3(){
-    local $fpath=$1
+    local fpath=$1
     create_if_not_exists $fpath || return 1
     local random_data
     random_data=$(tr -dc "$RAND_CHARSET" < /dev/urandom | head -c "$RAND_LENGTH")
@@ -70,10 +70,9 @@ file_3(){
 }
 
 file_45(){
-    local $fpath=$1
+    local fpath=$1
     create_if_not_exists "$fpath" || return 1
     trunc_if_not_empty "$fpath" || return 1
-    echo "empty file created: $fpath"
 }
 
 main(){
@@ -86,10 +85,11 @@ main(){
         fi
     fi
 
-    file_1 "$DEFAULT_DIR/1"
-    file_2 "$DEFAULT_DIR/2"
-    file_3 "$DEFAULT_DIR/3"
-    file_45 "$DEFAULT_DIR/4"
-    file_45 "$DEFAULT_DIR/5"
+    file_1  "$DEFAULT_DIR/1" || return 1
+    file_2  "$DEFAULT_DIR/2" || return 1
+    file_3  "$DEFAULT_DIR/3" || return 1
+    file_45 "$DEFAULT_DIR/4" || return 1
+    file_45 "$DEFAULT_DIR/5" || return 1
     echo "DONE"
 }
+main

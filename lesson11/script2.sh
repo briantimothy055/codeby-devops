@@ -1,41 +1,82 @@
 #!/usr/bin/env bash
 
-echo "--------------------------------------------------------------"
+readonly DEFAULT_DIR="$HOME/myfolder"
+readonly INSECURE_PERMS="777"
 
-DIR="$HOME/myfolder"
-if [ ! -d $DIR ]; then
-    mkdir $DIR
-    echo "$DIR created"
-fi
-
-# Total files
-file_count=$(ls -1 $DIR | wc -l)
-echo "dir [$DIR] has [$file_count] files"
-
-
-# Change perms
-file2="$DIR/2"
-if [ -f $file2 ]; then
-    if [[ "$(stat -c "%a" $file2)" == "777" ]]; then
-        chmod 664 $file2
-        echo "perms of [$file2] changed to 664"
+check_if_dir_exists(){
+    local dir_path=$1
+    if [[ ! -d "$dir_path" ]]; then
+        echo "failed: dir '$dir_path' does not exist" >&2
+        return 1
     fi
-else
-    echo "file [$file2] not found"
-fi
+    return 0
+}
 
-echo "--------------------------------------------------------------"
+get_dir_files_count(){
+    local dir_path="$1"
+    
+    if [[ -z "$dir_path" ]]; then
+        echo "failed: no dir path" >&2
+        return 1
+    fi
+    
+    if [[ ! -d "$dir_path" ]]; then
+        echo "failed: dir '$dir_path' does not exist" >&2
+        return 1
+    fi
+    
+    local file_count
+    file_count=$(find "$dir_path" -maxdepth 1 -type f 2>/dev/null | wc -l)
+    
+    echo "dir [$dir_path] has [$file_count] files"
+    return 0
+}
 
-for file in "$DIR"/*; do
-    if [ -f $file ]; then
-        if [ ! -s $file ]; then
-            rm $file
-            echo "empty file [$file] deleted"
-        else
-            sed -i '2,$d' $file
-            echo "non empty file [$file] removing lines"
+fix_insecure_perms(){
+    local fpath=$1
+    if [ -f $fpath ]; then
+        if [[ "$(stat -c "%a" $fpath)" == "$INSECURE_PERMS" ]]; then
+            chmod 664 $fpath
+            echo "perms of [$fpath] changed to 664"
+            return 0
         fi
+    else
+        echo "file [$fpath] not found"
+        return 1
     fi
-done
+}
 
-echo "--------------------------------------------------------------"
+delete_empty_or_truncate(){
+    local dir_path="$1"
+    if [[ ! -d "$dir_path" ]]; then
+        echo "failed: dir '$dir_path' does not exist" >&2
+        return 1
+    fi
+    for file in "$dir_path"/*; do
+        if [ -f $file ]; then
+            if [ ! -s $file ]; then
+                rm $file
+                echo "empty file [$file] deleted"
+            else
+                sed -i '2,$d' $file
+                echo "non empty file [$file] removing lines"
+            fi
+        fi
+    done
+    return 0
+}
+
+main(){
+    check_if_dir_exists $DEFAULT_DIR      || return 1
+    get_dir_files_count $DEFAULT_DIR      || return 1
+    
+    # Запуск скриптов в любой последовательности и количество запусков не должны вызывать ошибки
+    fix_insecure_perms "$DEFAULT_DIR/2"   || echo "file $DEFAULT_DIR/2 not found, skip"
+    
+    delete_empty_or_truncate $DEFAULT_DIR || return 1
+}
+main
+
+
+
+
