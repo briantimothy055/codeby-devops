@@ -1,0 +1,28 @@
+- name: Ansible Web Server
+  hosts: all
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Print environment info
+      ansible.builtin.debug:
+        msg: "This server is in {{ env_name }} environment"
+
+    - name: Update apt
+      apt:
+        update_cache: true
+        cache_valid_time: 3600
+    
+    - name: Install req packages
+      apt:
+        name:
+          - wget
+          - htop
+          - nginx
+        state: present
+      
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+        enabled: true
