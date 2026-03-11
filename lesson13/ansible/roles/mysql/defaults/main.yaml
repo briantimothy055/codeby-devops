@@ -1,0 +1,3 @@
+sql_pkg: "mariadb-server"
+sql_svc: "mariadb"
+sql_root_password: "P@ssw0rd"
