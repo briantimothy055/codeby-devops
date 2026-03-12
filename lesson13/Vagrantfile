@@ -1,0 +1,24 @@
+Vagrant.configure("2") do |config|
+  config.vm.box_check_update = false
+  
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = false
+    vb.memory = "512"
+  end
+  
+  config.vm.define "wp-deb" do |wp|
+    wp.vm.box = "debian/bookworm64"
+    wp.vm.hostname = "debian"
+    wp.vm.synced_folder ".", "/vagrant"
+    wp.vm.network "private_network", ip: "192.168.56.100"
+    wp.vm.network "forwarded_port", guest: 80, host: 8080 
+  end
+  
+  config.vm.define "wp-rocky" do |wp|
+    wp.vm.box = "bento/rockylinux-9"
+    wp.vm.hostname = "rocky"
+    wp.vm.synced_folder ".", "/vagrant"
+    wp.vm.network "private_network", ip: "192.168.56.101"
+    wp.vm.network "forwarded_port", guest: 80, host: 8081 
+  end
+end

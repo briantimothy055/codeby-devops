@@ -1,0 +1,8 @@
+- name: Ansible Roles
+  hosts: all
+  become: true
+  gather_facts: true
+
+  roles:
+    - mysql
+    # - apache

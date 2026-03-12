@@ -1,0 +1,6 @@
+apache_pkg: "{{ 'apache2' if ansible_os_family == 'Debian' else 'httpd' }}"
+apache_svc: "{{ 'apache2' if ansible_os_family == 'Debian' else 'httpd' }}"
+
+apache_cfg: "000-default.conf"  
+apache_cfg_dir: "{{ '/etc/apache2/sites-available' if ansible_os_family == 'Debian' else '/etc/httpd/conf.d' }}"
+apache_doc_root: "/var/www/html"
