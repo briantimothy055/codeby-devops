@@ -1,0 +1,277 @@
+Script started on 2026-04-01 12:38:44+07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="195" LINES="54"]
+[?2004h]0;gpm@codeby: ~/Dev/codeby-devops/lesson17┌─([38;5;82mgpm[0m@[38;5;196mcodeby[0m)─(~/Dev/codeby-devops/lesson17)─( lesson17)
+└$ fish
+[?2004lWelcome to fish, the friendly interactive shell
+Type [32mhelp(B[m for instructions on how to use fish
+]7;file://codeby/home/gpm/Dev/codeby-devops/lesson17]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>docker network create wp-net[66C[?2004h[>4;1m[=5u=[28Ddocker [36mnetwork create wp-net[30m(B[m[66C[?2004l[>4;0m[=0u>
+[30m(B[m]133;C;cmdline_url=docker%20network%20create%20wp-net]0;docker network creat ~/D/c/lesson17[30m(B[mpermission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+]133;D;1[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m (B[m[31m[[1m[31m1(B[m[31m](B[m(B[m> [K[42C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>docker network create wp-net[70C[?2004h[>4;1m[=5u=[28Ddocker [36mnetwork create wp-net[30m(B[m[70C[42C[42Csdocker [36mnetwork create wp-net[30m(B[m[43C[91msdocker[30m(B[m [36mnetwork create wp-net[30m(B[m[43C[91mudocker[30m(B[m [36mnetwork create wp-net[30m(B[m[44C[C[91mdocker[30m(B[m [36mnetwork create wp-net[30m(B[m[45C[91modocker[30m(B[m [36mnetwork create wp-net[30m(B[m[46C[91m docker[30m(B[m [36mnetwork create wp-net[30m(B[m[47Csudo [36mdocker network create wp-net[30m(B[m[47C[?2004l[>4;0m[=0u>[75C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20network%20create%20wp-net]0;sudo docker network  ~/D/c/lesson17[30m(B[m[sudo] password for gpm: 
+e2b00b62c080dd6d7f787dcde0ae30f21fe7d1ac5affb50bbd6e382e2ebaf4b6
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=s[39C[90mudo docker network create wp-net[30m(B[m[39C[91ms[90mudo docker network create wp-net[30m(B[m[39C[91mu[90mdo docker network create wp-net[30m(B[m[40Csu[90mdo docker network create wp-net[30m(B[m[40Cd[90mo docker network create wp-net[30m(B[m[41C[91msud[90mo docker network create wp-net[30m(B[m[41C[91mo[90m docker network create wp-net[30m(B[m[42Csudo[90m docker network create wp-net[30m(B[m[42C [90mdocker network create wp-net[30m(B[m[43C[?2004l[>4;0m[=0u>sudo docker volume create  wp-db[K[70C[?2004h[>4;1m[=5u=[32Dsudo [36mdocker volume create  wp-db[30m(B[m[70C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20volume%20create%20%20wp-db[?2004l[>4;0m[=0u>]0;sudo docker volume c ~/D/c/lesson17[30m(B[mwp-db
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=s[39C[90mudo docker volume create  wp-db[30m(B[m[39C[91ms[90mudo docker volume create  wp-db[30m(B[m[39C[91mu[90mdo docker volume create  wp-db[30m(B[m[40Csu[90mdo docker volume create  wp-db[30m(B[m[40Cd[90mo docker volume create  wp-db[30m(B[m[41C[91msud[90mo docker volume create  wp-db[30m(B[m[41C[91mo[90m docker volume create  wp-db[30m(B[m[42Csudo[90m docker volume create  wp-db[30m(B[m[42C [90mdocker volume create  wp-db[30m(B[m[43C[?2004l[>4;0m[=0u>sudo docker volume create  wp-data[72C[?2004h[>4;1m[=5u=[34Dsudo [36mdocker volume create  wp-data[30m(B[m[72C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20volume%20create%20%20wp-data[?2004l[>4;0m[=0u>]0;sudo docker volume c ~/D/c/lesson17[30m(B[mwp-data
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>sudo docker run -d --name wp-db --network wp-net --restart always \
+[K[42C  -v wp-db:/var/lib/mysql \
+[K[42C  -e MYSQL_ROOT_PASSWORD=secret \
+[K[42C  -e MYSQL_DATABASE=wordpress \
+[K[42C  -e MYSQL_USER=wp_user
+[K[38C-e MYSQL_PASSWORD=wp_pass
+[K[38Cmariadb:10.11[A[A[A[A[A[A
+
+
+
+
+
+[51C[?2004h[>4;1m[=5u=[A[A[A[A[A[A[13Dsudo [36mdocker run -d --name wp-db --network wp-net --restart always \[30m(B[m
+[42C[36m  -v wp-db:/var/lib/mysql \[30m(B[m
+[42C[36m  -e MYSQL_ROOT_PASSWORD=secret \[30m(B[m
+[42C[36m  -e MYSQL_DATABASE=wordpress \[30m(B[m
+[42C[36m  -e MYSQL_USER=wp_user[30m(B[m
+[38C[91m-e[36m MYSQL_PASSWORD=wp_pass[30m(B[m
+[38C[91mmariadb:10.11[30m(B[m[A[A[A[A[A[A
+
+
+
+
+
+[51C[A[A[A[A[A[A
+
+
+
+
+
+[49C[A[A[A[A[A[A
+
+
+
+
+
+[46C[A[A[A[A[A[A
+
+
+
+
+
+[38C[A[A[A[A[A[A
+
+
+
+
+[59C[?2004l[>4;0m[=0u>[A[A[A[A[A
+
+
+
+[59C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>[A[A[A[A
+
+
+
+
+[59C[?2004h[>4;1m[=5u=[A[A[A[A[A
+
+
+
+
+[63C[36m [30m(B[m[A[A[A[A[A
+
+
+
+
+[64C[36m\[30m(B[m
+[K[42C[91mmariadb:10.11[30m(B[m[A[A[A[A[A[A
+
+
+
+
+[65C
+[42C[36mmariadb:10.11[30m(B[m[A[A[A[A[A[A
+
+
+
+
+[65C[?2004l[>4;0m[=0u>[A[A[A[A[A
+
+
+
+[65C[?2004h[>4;1m[=5u=[36m [30m(B[m[A[A[A[A
+
+
+
+[66C[36m\[30m(B[m
+[K[42C[91m-e[36m MYSQL_PASSWORD=wp_pass \[30m(B[m[A[A[A[A[A
+
+
+
+[67C
+[42C[36m-e MYSQL_PASSWORD=wp_pass \[30m(B[m[A[A[A[A[A
+
+
+
+[67C[?2004l[>4;0m[=0u>[A[A[A[A
+
+
+
+
+[67C[?2004h[>4;1m[=5u=[A[A[A[A[A
+
+
+
+
+[63C[A[A[A[A[A
+
+
+
+
+[60C[A[A[A[A[A
+
+
+
+
+[51C[A[A[A[A[A
+
+
+
+
+[45C[A[A[A[A[A
+
+
+
+
+[43C[A[A[A[A[A
+
+
+
+
+[42C[36m -e MYSQL_PASSWORD=wp_pass \[30m(B[m[A[A[A[A[A
+
+
+
+
+[43C[36m -e MYSQL_PASSWORD=wp_pass \[30m(B[m[A[A[A[A[A
+
+
+
+
+[44C[?2004l[>4;0m[=0u>[A[A[A[A[A
+
+
+
+
+
+[44C[?2004h[>4;1m[=5u=[A[A[A[A[A[A
+
+
+
+
+
+[43C[A[A[A[A[A[A
+
+
+
+
+
+[42C[36m mariadb:10.11[30m(B[m[A[A[A[A[A[A
+
+
+
+
+
+[43C[36m mariadb:10.11[30m(B[m[A[A[A[A[A[A
+
+
+
+
+
+[44C[36m mariadb:10.11[30m(B[m[A[A[A[A[A[A
+
+
+
+
+
+[45C[?2004l[>4;0m[=0u>[A[A[A[A[A[A
+
+
+
+
+[45C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>[A[A[A[A[A
+
+
+
+[45C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>[A[A[A[A
+
+
+[45C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>[A[A[A
+
+[45C[?2004h[>4;1m[=5u=[A[A
+
+
+
+
+
+[58C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20run%20-d%20--name%20wp-db%20--network%20wp-net%20--restart%20always%20%5C%0A%20%20-v%20wp-db%3A/var/lib/mysql%20%5C%0A%20%20-e%20MYSQL_ROOT_PASSWORD%3Dsecret%20%5C%0A%20%20-e%20MYSQL_DATABASE%3Dwordpress%20%5C%0A%20%20-e%20MYSQL_USER%3Dwp_user%20%5C%0A%20%20-e%20MYSQL_PASSWORD%3Dwp_pass%20%5C%0A%20%20%20mariadb%3A10.11[?2004l[>4;0m[=0u>]0;sudo docker run -d - ~/D/c/lesson17[30m(B[mUnable to find image 'mariadb:10.11' locally
+10.11: Pulling from library/mariadb
+
+[1A[2K730e6ebc61dd: Pulling fs layer [1B
+[1A[2K029ae1c9f6ca: Pulling fs layer [1B
+[1A[2K96c832531c38: Pulling fs layer [1B
+[1A[2K3a64d5929e85: Pulling fs layer [1B
+[1A[2K66e78a4458d3: Pulling fs layer [1B
+[1A[2K94ab0ddf6ad8: Pulling fs layer [1B
+[1A[2K2f60795f8175: Pulling fs layer [1B
+[1A[2K19488b21c2f9: Pulling fs layer [1B
+[1A[2K0b1459ce344c: Download complete [1B[2A[2K19488b21c2f9: Download complete [2B
+[1A[2Kc9316eb092ca: Downloading [==========>                                        ]  1.049MB/4.801MB[1B[9A[2K029ae1c9f6ca: Download complete [9B[7A[2K3a64d5929e85: Download complete [7B[4A[2K2f60795f8175: Download complete [4B[10A[2K730e6ebc61dd: Download complete [10B[1A[2Kc9316eb092ca: Downloading [================================>                  ]  3.146MB/4.801MB[1B[1A[2Kc9316eb092ca: Downloading [===========================================>       ]  4.194MB/4.801MB[1B[1A[2Kc9316eb092ca: Download complete [1B[8A[2K96c832531c38: Downloading [===>                                               ]  2.097MB/29.54MB[8B[6A[2K66e78a4458d3: Downloading [=========>                                         ]  1.049MB/5.613MB[6B[8A[2K96c832531c38: Downloading [=======>                                           ]  4.194MB/29.54MB[8B[6A[2K66e78a4458d3: Downloading [==================>                                ]  2.097MB/5.613MB[6B[5A[2K94ab0ddf6ad8: Downloading [=>                                                 ]  2.097MB/71.13MB[5B[8A[2K96c832531c38: Downloading [=======>                                           ]  4.194MB/29.54MB[8B[6A[2K66e78a4458d3: Downloading [============================>                      ]  3.146MB/5.613MB[6B[5A[2K94ab0ddf6ad8: Downloading [==>                                                ]  3.146MB/71.13MB[5B[8A[2K96c832531c38: Downloading [=======>                                           ]  4.194MB/29.54MB[8B[6A[2K66e78a4458d3: Downloading [============================>                      ]  3.146MB/5.613MB[6B[5A[2K94ab0ddf6ad8: Downloading [==>                                                ]  3.146MB/71.13MB[5B[8A[2K96c832531c38: Downloading [========>                                          ]  5.243MB/29.54MB[8B[6A[2K66e78a4458d3: Downloading [============================>                      ]  3.146MB/5.613MB[6B[5A[2K94ab0ddf6ad8: Downloading [==>                                                ]  4.194MB/71.13MB[5B[8A[2K96c832531c38: Downloading [==========>                                        ]  6.291MB/29.54MB[8B[6A[2K66e78a4458d3: Downloading [=====================================>             ]  4.194MB/5.613MB[6B[5A[2K94ab0ddf6ad8: Downloading [===>                                               ]  5.243MB/71.13MB[5B[8A[2K96c832531c38: Downloading [============>                                      ]   7.34MB/29.54MB[8B[6A[2K66e78a4458d3: Downloading [==============================================>    ]  5.243MB/5.613MB[6B[5A[2K94ab0ddf6ad8: Downloading [=====>                                             ]   7.34MB/71.13MB[5B[6A[2K66e78a4458d3: Downloading [==============================================>    ]  5.243MB/5.613MB[6B[5A[2K94ab0ddf6ad8: Downloading [=====>                                             ]   7.34MB/71.13MB[5B[8A[2K96c832531c38: Downloading [===============>                                   ]  9.437MB/29.54MB[8B[8A[2K96c832531c38: Downloading [===============>                                   ]  9.437MB/29.54MB[8B[6A[2K66e78a4458d3: Download complete [6B[5A[2K94ab0ddf6ad8: Downloading [======>                                            ]  9.437MB/71.13MB[5B[8A[2K96c832531c38: Downloading [===============>                                   ]  9.437MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [======>                                            ]  9.437MB/71.13MB[5B[8A[2K96c832531c38: Downloading [=====================>                             ]  12.58MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [========>                                          ]  11.53MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [===========>                                       ]  15.73MB/71.13MB[5B[8A[2K96c832531c38: Downloading [=====================>                             ]  12.58MB/29.54MB[8B[8A[2K96c832531c38: Downloading [=======================>                           ]  13.63MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [===========>                                       ]  15.73MB/71.13MB[5B[8A[2K96c832531c38: Downloading [============================>                      ]  16.78MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [===========>                                       ]  16.78MB/71.13MB[5B[8A[2K96c832531c38: Downloading [============================>                      ]  16.78MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [=============>                                     ]  18.87MB/71.13MB[5B[8A[2K96c832531c38: Downloading [==============================>                    ]  17.83MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [==============>                                    ]  20.97MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [==============>                                    ]  20.97MB/71.13MB[5B[8A[2K96c832531c38: Downloading [===============================>                   ]  18.87MB/29.54MB[8B[8A[2K96c832531c38: Downloading [=================================>                 ]  19.92MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [===============>                                   ]  22.02MB/71.13MB[5B[8A[2K96c832531c38: Downloading [============================================>      ]  26.21MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [================>                                  ]  23.07MB/71.13MB[5B[8A[2K96c832531c38: Downloading [============================================>      ]  26.21MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [================>                                  ]  23.07MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [==================>                                ]  26.21MB/71.13MB[5B[8A[2K96c832531c38: Downloading [==============================================>    ]  27.26MB/29.54MB[8B[8A[2K96c832531c38: Downloading [==============================================>    ]  27.26MB/29.54MB[8B[5A[2K94ab0ddf6ad8: Downloading [====================>                              ]  29.36MB/71.13MB[5B[8A[2K96c832531c38: Download complete [8B[5A[2K94ab0ddf6ad8: Downloading [====================>                              ]  29.36MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [======================>                            ]  32.51MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [======================>                            ]  32.51MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [=========================>                         ]   36.7MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [==========================>                        ]  37.75MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [=============================>                     ]  41.94MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [===============================>                   ]  45.09MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [===============================>                   ]  45.09MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [=================================>                 ]  48.23MB/71.13MB[5B[8A[2K96c832531c38: Extracting 1 s[8B[5A[2K94ab0ddf6ad8: Downloading [=================================>                 ]  48.23MB/71.13MB[5B[8A[2K96c832531c38: Pull complete [8B[5A[2K94ab0ddf6ad8: Downloading [=================================>                 ]  48.23MB/71.13MB[5B[7A[2K3a64d5929e85: Pull complete [7B[6A[2K66e78a4458d3: Extracting 1 s[6B[5A[2K94ab0ddf6ad8: Downloading [=================================>                 ]  48.23MB/71.13MB[5B[6A[2K66e78a4458d3: Extracting 1 s[6B[5A[2K94ab0ddf6ad8: Downloading [=================================>                 ]  48.23MB/71.13MB[5B[6A[2K66e78a4458d3: Extracting 1 s[6B[5A[2K94ab0ddf6ad8: Downloading [=================================>                 ]  48.23MB/71.13MB[5B[9A[2K029ae1c9f6ca: Pull complete [9B[4A[2K2f60795f8175: Pull complete [4B[6A[2K66e78a4458d3: Pull complete [6B[5A[2K94ab0ddf6ad8: Downloading [=================================>                 ]  48.23MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [====================================>              ]  52.43MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [=====================================>             ]  53.48MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [=======================================>           ]  56.62MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [==========================================>        ]  60.82MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [=============================================>     ]  65.01MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [===============================================>   ]  67.11MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [================================================>  ]  69.21MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Downloading [==================================================>]  71.13MB/71.13MB[5B[5A[2K94ab0ddf6ad8: Download complete [5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 1 s[5B[5A[2K94ab0ddf6ad8: Extracting 2 s[5B[5A[2K94ab0ddf6ad8: Extracting 2 s[5B[5A[2K94ab0ddf6ad8: Extracting 2 s[5B[5A[2K94ab0ddf6ad8: Extracting 2 s[5B[3A[2K19488b21c2f9: Pull complete [3B[10A[2K730e6ebc61dd: Pull complete [10B[5A[2K94ab0ddf6ad8: Pull complete [5BDigest: sha256:4045aba619003d93b5dc834e89e6815ba078d2cb3ff0a26f316ab5d7eab35093
+Status: Downloaded newer image for mariadb:10.11
+ff2402d6f4d711580f838bbe0ec0eb3bad78518303bcb0e6552cb931cc4380c1
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>sudo docker run -d --name wp-app --network wp-net --restart always \
+[K[42C  -p 8080:80 \
+[K[42C  -v wp-data:/var/www/html \
+[K[42C  -e WORDPRESS_DB_HOST=wp-db \
+[K[42C  -e WORDPRESS_DB_USER=root \
+[K[42C  -e WORDPRESS_DB_PASSWORD=secret \
+[K[42C  wordpress
+[K[A[A[A[A[A[A[A
+
+
+
+
+
+
+[38C[?2004h[>4;1m[=5u=[A[A[A[A[A[A[Asudo [36mdocker run -d --name wp-app --network wp-net --restart always \[30m(B[m
+[42C[36m  -p 8080:80 \[30m(B[m
+[42C[36m  -v wp-data:/var/www/html \[30m(B[m
+[42C[36m  -e WORDPRESS_DB_HOST=wp-db \[30m(B[m
+[42C[36m  -e WORDPRESS_DB_USER=root \[30m(B[m
+[42C[36m  -e WORDPRESS_DB_PASSWORD=secret \[30m(B[m
+[42C[36m  wordpress[30m(B[m[A[A[A[A[A[A
+
+
+
+
+
+
+[38C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20run%20-d%20--name%20wp-app%20--network%20wp-net%20--restart%20always%20%5C%0A%20%20-p%208080%3A80%20%5C%0A%20%20-v%20wp-data%3A/var/www/html%20%5C%0A%20%20-e%20WORDPRESS_DB_HOST%3Dwp-db%20%5C%0A%20%20-e%20WORDPRESS_DB_USER%3Droot%20%5C%0A%20%20-e%20WORDPRESS_DB_PASSWORD%3Dsecret%20%5C%0A%20%20wordpress%0A[?2004l[>4;0m[=0u>]0;sudo docker run -d - ~/D/c/lesson17[30m(B[m728d3137dfa4d7f129e53a9b204f0b3a2159f08da8d7301fa6cb108401f83146
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=s[39C[91ms[30m(B[m[39C[90mudo docker volume create  wp-data[30m(B[m[39C[91mu[90mdo docker volume create  wp-data[30m(B[m[40Csu[90mdo docker volume create  wp-data[30m(B[m[40Cd[90mo docker volume create  wp-data[30m(B[m[41C[91msud[90mo docker volume create  wp-data[30m(B[m[41C[91mo[90m docker volume create  wp-data[30m(B[m[42Csudo[90m docker volume create  wp-data[30m(B[m[42C [90mdocker volume create  wp-data[30m(B[m[43Cd[90mocker volume create  wp-data[30m(B[m[44C[36md[90mocker volume create  wp-data[30m(B[m[44C[36mo[90mcker volume create  wp-data[30m(B[m[45C[36mc[90mker volume create  wp-data[30m(B[m[46C[36mk[90mer volume create  wp-data[30m(B[m[47C[36me[90mr volume create  wp-data[30m(B[m[48C[36mr[90m volume create  wp-data[30m(B[m[49C[36m [90mvolume create  wp-data[30m(B[m[50C[36mp[30m(B[m[K[51C[90ms -aq[30m(B[m[51C[36ms[90m -aq[30m(B[m[52C[36m [90m-aq[30m(B[m[53C[36m-[90maq[30m(B[m[54C[36m-[90maq[30m(B[m[54C[36mq[30m(B[m[K[55C[90ma[30m(B[m[55C[K[54C[36ma[30m(B[m[55C[90mq[30m(B[m[55C[K[55C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20ps%20-a[?2004l[>4;0m[=0u>]0;sudo docker ps -a ~/D/c/lesson17[30m(B[mCONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+728d3137dfa4   wordpress       "docker-entrypoint.s…"   5 seconds ago    Up 5 seconds    0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   wp-app
+ff2402d6f4d7   mariadb:10.11   "docker-entrypoint.s…"   14 seconds ago   Up 11 seconds   3306/tcp                                  wp-db
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>sudo docker ps -a[55C[?2004h[>4;1m[=5u=[17Dsudo [36mdocker ps -a[30m(B[m[55C[55C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20ps%20-a[?2004l[>4;0m[=0u>]0;sudo docker ps -a ~/D/c/lesson17[30m(B[mCONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+728d3137dfa4   wordpress       "docker-entrypoint.s…"   7 seconds ago    Up 7 seconds    0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   wp-app
+ff2402d6f4d7   mariadb:10.11   "docker-entrypoint.s…"   16 seconds ago   Up 13 seconds   3306/tcp                                  wp-db
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=[?2004l[>4;0m[=0u>sudo docker ps -a[55C[?2004h[>4;1m[=5u=[17Dsudo [36mdocker ps -a[30m(B[m[55C[55C
+[30m(B[m]133;C;cmdline_url=sudo%20docker%20ps%20-a[?2004l[>4;0m[=0u>]0;sudo docker ps -a ~/D/c/lesson17[30m(B[mCONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+728d3137dfa4   wordpress       "docker-entrypoint.s…"   8 seconds ago    Up 7 seconds    0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   wp-app
+ff2402d6f4d7   mariadb:10.11   "docker-entrypoint.s…"   17 seconds ago   Up 14 seconds   3306/tcp                                  wp-db
+]133;D;0[?25h[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=
+[30m(B[m[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K[?2004l[>4;0m[=0u>]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=
+[30m(B[m[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K[?2004l[>4;0m[=0u>]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=
+[30m(B[m[2m⏎(B[m                                                                                                                                                                                                  ⏎ [K[?2004l[>4;0m[=0u>]0;~/D/c/lesson17[30m(B[m]133;A;special_key=1[92mgpm(B[m@(B[mcodeby(B[m [32m~/D/c/lesson17(B[m (lesson17)(B[m> [K[38C[?2004h[>4;1m[=5u=
+[30m(B[m[30m(B[m[?2004l[>4;0m[=0u>[?2004h]0;gpm@codeby: ~/Dev/codeby-devops/lesson17┌─([38;5;82mgpm[0m@[38;5;196mcodeby[0m)─(~/Dev/codeby-devops/lesson17)─( lesson17)
+└$ [?2004l
+exit
+
+Script done on 2026-04-01 12:40:13+07:00 [COMMAND_EXIT_CODE="0"]
